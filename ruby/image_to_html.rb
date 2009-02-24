@@ -9,14 +9,18 @@ require 'RMagick'
 include Magick
 
 
-img = Image.read('ruby.jpg').first
-puts "<html><body><table cellspacing=\"0\" cellpadding=\"0\" border=\"1\">"
+img = Image.read(ARGV[0]).first
+html =  "<html><body><table cellspacing=\"0\" cellpadding=\"0\" border=\"1\">\n"
 img.rows.times do |r|
-  puts "<tr>"
+  html += "<tr>\n"
   img.columns.times do |c|
     pixel = img.pixel_color(c+1, r+1)
-    puts "<td style=\"background-color: #{img.to_color(pixel)};\"></td>"
+    html += "<td style=\"background-color: #{img.to_color(pixel)};\"></td>\n"
   end
-  puts "</tr>"
+  html += "</tr>\n"
 end
-puts "</table></body></html>"
+html += "</table></body></html>"
+
+f = File.open('image.html',"w")
+f.puts html
+f.close
