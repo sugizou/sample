@@ -21,6 +21,4 @@ img.rows.times do |r|
 end
 html += "</table></body></html>"
 
-f = File.open('image.html',"w")
-f.puts html
-f.close
+File.open('image.html',"w"){|f| f.puts html }
