@@ -10,7 +10,7 @@ include Magick
 
 
 img = Image.read(ARGV[0]).first
-html =  "<html><body><table cellspacing=\"0\" cellpadding=\"0\" border=\"1\">\n"
+html =  "<html><style><!-- *{margin:0;padding:0;}td{width:1px;}tr{height:1px;} --></style><body><table cellspacing=\"0\" cellpadding=\"0\">\n"
 img.rows.times do |r|
   html += "<tr>\n"
   img.columns.times do |c|
