@@ -11,8 +11,8 @@ plugin 'rspec-rails', :git => 'git://github.com/dchelimsky/rspec-rails.git', :su
 plugin 'i18n_generators', :git => 'git://github.com/amatsuda/i18n_generators.git', :submodule => false
 plugin 'cucumber', :git => 'git://github.com/aslakhellesoy/cucumber.git', :submodule => false
 plugin 'restful_authentication', :git => 'git://github.com/technoweenie/restful-authentication.git', :submodule => false
-plugin 'rspec-rr' :git => 'git://github.com/josephwilk/rspec-rr.git', :submodule => false
-plugin 'will_paginate', :git => 'git://github.com/mislav/will_paginate.git' :submodule => false
+plugin 'rspec-rr', :git => 'git://github.com/josephwilk/rspec-rr.git', :submodule => false
+plugin 'will_paginate', :git => 'git://github.com/mislav/will_paginate.git', :submodule => false
 
 #ignore
 run "touch tmp/.gitignore log/.gitignore"
