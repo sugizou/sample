@@ -3,7 +3,7 @@
 #===========================================================================
 # bash hotfix patches script
 # see also: http://qiita.com/syui/items/809c1cd8ed57c8cdb055
-#
+#           http://alblue.bandlem.com/2014/09/bash-remote-vulnerability.html
 #
 #===========================================================================
 
